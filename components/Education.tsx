@@ -11,12 +11,11 @@ import { educationData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
-export default function MyEducation() {
-  const { ref } = useSectionInView("education");
-  const { theme } = useTheme();-
-
+const Education = () => {
+  const { ref } = useSectionInView("Education");
+  const { theme } = useTheme();
   return (
-    <section id="education" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="education" ref={ref}  className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My Education Details</SectionHeading>
       <VerticalTimeline lineColor="">
         {educationData.map((item, index) => (
@@ -54,5 +53,7 @@ export default function MyEducation() {
         ))}
       </VerticalTimeline>
     </section>
-  );
+  )
 }
+
+export default Education

@@ -1,4 +1,4 @@
-import MyEducation from "@/components/MyEducation";
+import Education from "@/components/Education";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
@@ -16,8 +16,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
-      <MyEducation />
-
+      <Education />
       <Contact />
     </main>
   );
